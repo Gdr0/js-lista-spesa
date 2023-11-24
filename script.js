@@ -4,14 +4,11 @@
 // selezione UL
 const listaUl = document.querySelector(".lista_spesa");
 // stilo una lista per la spesa
-const spesa = ["farina", "uova", "latte"];
-// ciclo per scorrere ogni elemento della spesa
+const spesa = ["pasta", "uova", "pane", "passata", "latte"];
 i = 0;
-while (i < spesa.length - 1) {
-  i++;
-  //   stampo in console gli elementi della spesa signolarmente
+// ciclo per scorrere ogni elemento della spesa
+while (i < spesa.length) {
   console.log(spesa[i]);
-  //   salvo l'elemento iesimo dentro una variabile
   let spesaI = spesa[i];
   //   creo LI
   const elementLi = document.createElement("li");
@@ -19,6 +16,7 @@ while (i < spesa.length - 1) {
   elementLi.append(spesaI);
   //   inserisco dentro a UL
   listaUl.append(elementLi);
+  i++;
 }
 
 //
